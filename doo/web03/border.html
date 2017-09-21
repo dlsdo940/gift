@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+	    /*박스의 크기*/
+		div{
+			width: 200px; height: 50px;
+			/*margin: 10px;*/
+		}
+		.box1{
+			background-color: #ff0000;
+		}
+		.box2{
+			background-color: #00ff00; border: 10px solid #000000;
+		}
+		.box3{
+			background-color: #0000ff; padding: 10px;
+		}
+		.box4{
+			background-color: #ff00ff; border: 10px solid #000000;
+			padding: 10px;
+		}
+		/*박스계층에서의 크기*/
+
+		.parent {
+			background-color: #ff00ff;
+			border: 10px dotted #0000FF;
+			margin: 10px;
+			width: 500px;
+			height: 300px;
+		}
+		.child {
+			background-color: #00ff00;
+			width: 430px;
+			height: 250px;
+			padding: 10px 20px;
+			border: 5px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">박스1</div><br/>
+	<div class="box2">박스2</div><br/>
+	<div class="box3">박스3</div><br/>
+	<div class="box4">박스4</div><br/>
+	<hr />
+
+    <div class="parent">
+    	<div class="child">HTML &amp; CSS</div>
+    </div>
+</body>
+</html>

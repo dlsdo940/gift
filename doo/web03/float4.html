@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+	#parent {border:5px dotted #000000; padding: 10px;}
+	/*float속성이 적용된 요소는 부모 요소가 감싸지 못한다.*/
+	#box1{
+		width: 300px;
+		padding: 10px;
+		border:1px solid #eee;
+		margin: 0 0 10px 10px;
+		float: right;
+	}
+	#box1 img {width: 100%; }
+
+	#box2{
+
+        padding: 10px;
+        border:1px solid #eee;
+		margin: 0 10px 10px 0;
+		float: left;
+	}
+	
+	.clear:after{
+		display: block;
+		content: '';
+		clear: both; float: none;}
+	</style>
+</head>
+<body>
+<div id="parent" class="clear">
+	<div id="box1">
+		<img src="img2/title.jpg" />		
+	</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa?</p>
+		</div> 
+	<div class="clear">
+		<br />
+<div id="parent" class="clear">
+	<div id="box2">
+		<img src="img2/html5.png" alt="이미지">
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, nisi!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, mollitia, reiciendis. Enim eaque, provident, dignissimos repudiandae eligendi deleniti velit numquam nihil quam, nesciunt debitis, quae corrupti quidem consectetur laboriosam veniam.</p>	
+   </div>
+<div class="clear">
+	<p>(출처: 위키백과)</p>
+</body>
+</html>

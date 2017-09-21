@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	
+</head>
+<body>
+	<form name="form2">
+	 <h1>회원가입</h1>
+	 <fieldset>
+	 	<legend> 부가 정보 </legend>
+	 	<div>
+	 		<label for="user_mail">이메일 - </label>
+	 		<input type="meail" name="user_mail" id="user_mail" required="required"
+	 		title="ex) onel_ove@naver.com" />
+	 	</div>
+	 	<div>
+	 		<label for="user_homepage">홈페이지 - </label>
+	 		<input type="url" name="url_homepage" id="url_homepage" />
+	 	</div>
+	 	<div>
+	 		<label for="user_name">이름 - </label>
+	 		<input type="text" name="user_name" id="user_name" />
+	 	</div>
+	 	<div>
+	 		<label for="user_age">나이 - </label>
+	 		<input type="unmber" name="user_age" id="user_age" min="18" max="45" step="1" />
+	 	</div>
+	 	<div>
+	 		<label for="user_tel">전화번호 - </label>
+	 		<input type="tel" name="user_tel" id="user_tel" />
+	 	</div>
+	 	<div>
+	 		<label for="user_phone">연락처 - </label>
+	 		<input type="tel" name="user_phone" id="user_phone /">
+	 	</div>
+	 	<div>
+	 		<label for="birthday">생년월일 - </label>
+	 		<input type="date" name="birthday" id="birthday" value="2014-11-30" />
+	 	</div>
+	 	<div>
+	 		<label for="point">목표성취도(%) - </label>
+	 		<input type="range" name="point" id="point" value="50" min="0" max="100" />
+	 	</div>
+	 	<div> <!-- value 속성의 값을 나타낸다. -->
+	 		<label for="worktime">출근시간 - </label>
+	 		<input type="time" name="worktime" id="worktime" value="09:00">
+	 	</div>
+	    <div>
+	    	<label for="friend">추천인 아이디 - </label>
+	    	<input type="search" name="friend" id="friend" />
+	    </div>
+	    <div>
+	    	<button type="submit" formaction="action1.html" formmethod="get" formtarget="_blank">14세 이상 회원가입 </button> <!-- 모든내용이 url에 포함된다. -->
+	    	<button type="submit" formaction="action2.html" formmethod="post" formtarget="_self">14세 미만 회원가입 </button>
+	    </div>
+	 </fieldset>
+	 </form>
+</body>
+</html>

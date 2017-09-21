@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+	.link{
+		font: 16px "굴림";
+		padding: 10px 15px;
+		color: #222;
+		text-decoration: none;
+		display: block;
+		width: auto;
+		height: auto;
+		border-bottom: 1px dotted #cccccc;
+	}
+	.link:first-child{
+		border-top: 1px dotted #cccccc;
+	}
+	.link:hover{
+		background-color: #ffff00;
+	}
+	.link span {
+		display: block;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.link .subject {
+		font-weight: bold;
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+	.link .desc {
+		font-size: 12px;
+	}
+	</style>
+</head>
+<body>
+	<!-- 링크 안에서 여러개의 문단을 구성하기 위해서는 <span>태그만 사용할 수 있다. -->
+	<a href="#" class="link">
+		<span class="subject">HTML</span>
+		<span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio!</span>
+	</a>
+	<a href="#" class="link">
+		<span class="subject">CSS</span>
+		<span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, tempora.</span>
+	</a>
+	<a href="#" class="link">
+		<span class="subject">JavaScript</span>
+		<span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, officiis.</span>
+	</a>
+</body>
+</html>
